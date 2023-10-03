@@ -31,7 +31,7 @@ export default {
 
 <style lang="scss" scoped>
 .logo {
-  width: 8%;
+  width: 6%;
   position: absolute;
   top: 0;
   left: 20%;
