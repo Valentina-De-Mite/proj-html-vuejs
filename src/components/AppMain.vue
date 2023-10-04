@@ -89,12 +89,30 @@ export default {
         </div>
       </div>
 
-      <div class="row d-flex flex-row">
-        <div class="col-4 px-5 m-0">
+      <div class="row">
+        <div class="col-4 px-5 m-0 d-flex align-items-center">
           <div class="macchia orange col-4 fw-bold fs-1">6500</div>
           <div class="orange fw-bold col-4 fs-1">+</div>
-          <div class="fs-3 fw-bold col-4">Students</div>
+          <div class="fs-4 fw-bold col-4">Students</div>
         </div>
+        <div class="col-4 px-5 m-0 d-flex align-items-center">
+          <div class="macchia orange col-4 fw-bold fs-1">200</div>
+          <div class="orange fw-bold col-2 fs-1">+</div>
+          <div class="fs-4 fw-bold col-6">Online Courses</div>
+        </div>
+        <div class="col-4 px-5 m-0 d-flex align-items-center">
+          <div class="macchia orange col-4 fw-bold fs-1">100</div>
+          <div class="orange fw-bold col-2 fs-1">%</div>
+          <div class="fs-4 fw-bold col-6">Happy Clients</div>
+        </div>
+      </div>
+
+      <div class="col-8 m-auto mt-5">
+        <h2 class="fw-bold">Recent Courses</h2>
+        <p class="fs-5 mt-4">
+          Whether you're considering a fountation course or an undergraduate
+          degree master's or a PhD, academics is a place where students thrive.
+        </p>
       </div>
     </div>
   </main>
