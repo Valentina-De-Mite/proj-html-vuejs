@@ -13,9 +13,9 @@ export default {
 <template>
   <body>
     <img class="logo" src="../assets/img/Logo.jpg" alt="" />
-    <nav class="navbar navbar-expand navbar-light bg-light">
+    <nav class="navbar navbar-expand navbar-light bg-light py-3">
       <div class="container d-flex justify-content-end">
-        <div class="nav navbar-nav">
+        <div class="nav navbar-nav fs-5">
           <a class="nav-item nav-link active" href="#" aria-current="page"
             >Home</a
           >
@@ -31,14 +31,14 @@ export default {
 
 <style lang="scss" scoped>
 .logo {
-  width: 6%;
+  width: 8%;
   position: absolute;
   top: 0;
   left: 20%;
   z-index: 99;
 }
 
-body {
+.navbar {
   position: relative;
   font-family: "Gabarito", cursive;
 }
