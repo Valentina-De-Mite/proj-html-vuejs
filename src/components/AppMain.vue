@@ -1,10 +1,18 @@
 <script>
 import { state } from "../state";
+import cards from "../assets/card.js";
+import CardComponent from "../components/CardComponent.vue";
 
 export default {
   name: "AppMain",
+
+  components: {
+    CardComponent,
+  },
   data() {
-    return {};
+    return {
+      cards,
+    };
   },
 };
 </script>
@@ -35,57 +43,13 @@ export default {
         <div
           class="row row-cols-3 row-cols-md-1 my-5 g-3 grid gap-0 column-gap-3 justify-content-evenly"
         >
-          <div
-            class="card border p-5 border-top-0 shadow mt-4 d-flex align align-items-center"
-            style="width: 25rem"
+          <CardComponent
+            v-for="card in cards"
+            :image_source="card.image_source"
+            :card_title="card.card_title"
+            :card_text="card.card_text"
           >
-            <img
-              src="../assets/svg/svg-0.svg"
-              class="card-img-top w-25 py-3"
-              alt="..."
-            />
-            <div class="card-body">
-              <h4 class="card-title">Online Coaching</h4>
-              <p class="card-text fs-5">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum
-                aut facilis quo quae corrupti nostrum?
-              </p>
-            </div>
-          </div>
-          <div
-            class="card border p-5 border-top-0 shadow mt-4 d-flex align align-items-center"
-            style="width: 25rem"
-          >
-            <img
-              src="../assets/svg/svg-0.svg"
-              class="card-img-top w-25 py-3"
-              alt="..."
-            />
-            <div class="card-body">
-              <h4 class="card-title">Online Coaching</h4>
-              <p class="card-text fs-5">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum
-                aut facilis quo quae corrupti nostrum?
-              </p>
-            </div>
-          </div>
-          <div
-            class="card border p-5 border-top-0 shadow mt-4 d-flex align align-items-center"
-            style="width: 25rem"
-          >
-            <img
-              src="../assets/svg/svg-0.svg"
-              class="card-img-top w-25 py-3"
-              alt="..."
-            />
-            <div class="card-body">
-              <h4 class="card-title">Online Coaching</h4>
-              <p class="card-text fs-5">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum
-                aut facilis quo quae corrupti nostrum?
-              </p>
-            </div>
-          </div>
+          </CardComponent>
         </div>
       </div>
 
