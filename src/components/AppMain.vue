@@ -40,34 +40,33 @@ export default {
         </p>
       </div>
       <div class="cards">
-        <div
-          class="row row-cols-3 row-cols-md-1 my-5 g-3 grid gap-0 column-gap-3 justify-content-evenly"
-        >
+        <div class="row row-cols-3 my-5 grid px-3 justify-content-between">
           <CardComponent
             v-for="card in cards"
             :image_source="card.image_source"
             :card_title="card.card_title"
             :card_text="card.card_text"
+            :cod="card.cod"
           >
           </CardComponent>
         </div>
       </div>
 
-      <div class="row">
+      <div class="row p-5">
         <div class="col-4 px-5 m-0 d-flex align-items-center">
-          <div class="macchia orange col-4 fw-bold fs-1">6500</div>
-          <div class="orange fw-bold col-4 fs-1">+</div>
-          <div class="fs-4 fw-bold col-4">Students</div>
+          <div class="macchia_1 orange col-4 fw-bold fs-1">6500</div>
+          <div class="orange fw-bold col-2 fs-1 ps-3">+</div>
+          <div class="fs-4 fw-bold col-6">Students</div>
         </div>
         <div class="col-4 px-5 m-0 d-flex align-items-center">
-          <div class="macchia orange col-4 fw-bold fs-1">200</div>
-          <div class="orange fw-bold col-2 fs-1">+</div>
-          <div class="fs-4 fw-bold col-6">Online Courses</div>
+          <div class="macchia_2 red_subtle col-4 fw-bold fs-1">200</div>
+          <div class="red_subtle fw-bold col-2 me-2 fs-1">+</div>
+          <div class="fs-4 fw-bold col-7">Online Courses</div>
         </div>
         <div class="col-4 px-5 m-0 d-flex align-items-center">
-          <div class="macchia orange col-4 fw-bold fs-1">100</div>
-          <div class="orange fw-bold col-2 fs-1">%</div>
-          <div class="fs-4 fw-bold col-6">Happy Clients</div>
+          <div class="macchia_3 green col-4 fw-bold fs-1">100</div>
+          <div class="green fw-bold col-2 fs-1">%</div>
+          <div class="fs-4 fw-bold col-7">Happy Clients</div>
         </div>
       </div>
 
@@ -103,10 +102,22 @@ export default {
   font-size: 30px;
 }
 
-.macchia {
+.macchia_1 {
   background-image: url(../assets/img/counter-shape-1-1-1.png);
   background-repeat: no-repeat;
-  background-size: center;
+  background-size: contain;
+}
+
+.macchia_2 {
+  background-image: url(../assets/img/counter-shape-2-1-1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.macchia_3 {
+  background-image: url(../assets/img/counter-shape-3-1-1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .red {
   color: var(--t_red_subtle);
@@ -114,6 +125,14 @@ export default {
 
 .orange {
   color: var(--t_orange);
+}
+
+.red_subtle {
+  color: var(--t_red_subtle);
+}
+
+.green {
+  color: var(--t_green);
 }
 .cursive {
   font-family: "Playfair Display", serif;

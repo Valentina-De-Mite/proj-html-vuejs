@@ -6,6 +6,7 @@ export default {
     image_source: String,
     card_title: String,
     card_text: String,
+    cod: Number,
   },
   data() {
     return {
@@ -17,8 +18,7 @@ export default {
 
 <template>
   <div
-    class="card border p-5 border-top-0 shadow mt-4 d-flex align align-items-center"
-    style="width: 25rem"
+    class="card border p-5 border-top-0 shadow mt-4 d-flex align align-items-center col-3"
   >
     <img
       :src="base_src + image_source"
